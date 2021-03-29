@@ -13,8 +13,10 @@ export default class Sketch {
     this.scene = new THREE.Scene();
 
     this.container = options.dom;
+
     this.width = this.container.offsetWidth;
     this.height = this.container.offsetHeight;
+    
     this.renderer = new THREE.WebGLRenderer();
     this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
     this.renderer.setSize(this.width, this.height);
